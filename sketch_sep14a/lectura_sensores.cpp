@@ -1,3 +1,5 @@
+#include "lectura_sensores.h"
+
 void task_sensores(void *pvParameters){
 
   float lectura = 0;

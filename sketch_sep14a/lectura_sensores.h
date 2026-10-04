@@ -8,6 +8,7 @@
 #include "fsm.h"
 #define T_REF 3.3
 #define RES_ADC 4095.0
+
 //Esto hay calcularlo, porahora usamos esto
 #define OFFSET_ACS30 1.65
 #define OFFSET_ACS20 1.65

@@ -1,4 +1,5 @@
 #include "fsm.h"
+#include "pagina_web.h"
 
 void task_fsm(void *pvParameters){
   
@@ -70,11 +71,11 @@ void task_fsm(void *pvParameters){
         }
       cambiarReles(*estado);
     }
+    xQueueSend(cola_web,&msj,0);
     vTaskDelay(pdMS_TO_TICKS(50));
-    xQueueSend(cola_web,&lectura,0);
   }
 
-}
+}g
 
 void cambiarReles(EstadoSistema est){
  switch (*(params->estado)) {
